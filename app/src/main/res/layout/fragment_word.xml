@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvEnglishWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello"
+            android:textStyle="bold"
+            android:textSize="70sp"
+            android:layout_marginTop="50dp" />
+
+        <EditText
+            android:id="@+id/etUserTranslation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите перевод"
+            android:textSize="40sp"
+            android:layout_marginTop="40dp" />
+
+        <Button
+            android:id="@+id/btnSubmitTranslation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Отправить перевод"
+            android:textSize="25sp"
+            android:layout_marginTop="50dp" />
+
+        <TextView
+            android:id="@+id/tvFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="50sp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            />
+
+        <Button
+            android:id="@+id/btnNextWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Следующее слово"
+            android:textSize="25sp"
+            android:layout_marginTop="50dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnRestartGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Перезапустить игру"
+            android:textSize="25sp"
+            android:layout_marginTop="50dp"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="50dp" />
+    </LinearLayout>
+</ScrollView>
